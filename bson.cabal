@@ -38,11 +38,9 @@ Library
                     , text >= 0.11
 
   if flag(_old-network)
-     -- "Network.BSD" is only available in network < 2.9
-     build-depends: network < 2.9
+     build-depends: network
   else
-     -- "Network.BSD" has been moved into its own package `network-bsd`
-     build-depends: network-bsd >= 2.7 && < 2.9
+     build-depends: network-bsd
 
   Default-Language: Haskell2010
   Default-Extensions: BangPatterns, CPP
