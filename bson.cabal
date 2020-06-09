@@ -36,11 +36,8 @@ Library
                     , data-binary-ieee754
                     , mtl >= 2
                     , text >= 0.11
-
-  if flag(_old-network)
-     build-depends: network
-  else
-     build-depends: network-bsd
+                    , network
+                    , network-bsd
 
   Default-Language: Haskell2010
   Default-Extensions: BangPatterns, CPP
